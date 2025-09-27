@@ -205,7 +205,7 @@ Download the [KeyboardKit app][KeyboardKit-App] from the App Store to try Keyboa
 
 ## Contact
 
-VietnameseInput is developed by [Kankoda][Kankoda] - a software company in Stockholm, Sweden.
+KeyboardKit is developed by [Kankoda][Kankoda] in Stockholm, Sweden.
 
 * Website: [keyboardkit.com][Website]
 * E-mail: [info@keyboardkit.com][Email]
