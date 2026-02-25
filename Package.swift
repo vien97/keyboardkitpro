@@ -1,27 +1,39 @@
-// swift-tools-version:5.9
+// swift-tools-version: 5.9
 
 import PackageDescription
 
 let package = Package(
-    name: "KeyboardKitPro",
+    name: "KeyboardKit",
+    defaultLocalization: "en",
     platforms: [
-        .iOS(.v15),
-        .macOS(.v12),
-        .tvOS(.v15),
-        .watchOS(.v8),
+        .iOS(.v16),
+        .macOS(.v13),
+        .tvOS(.v16),
+        .watchOS(.v10),
         .visionOS(.v1)
     ],
     products: [
         .library(
-            name: "KeyboardKitPro",
-            targets: ["KeyboardKitPro"]
+            name: "KeyboardKit",
+            targets: ["KeyboardKit", "KeyboardKitDependencies"]
+        )
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/LicenseKit/LicenseKit.git",
+            exact: "2.1.3"
         )
     ],
     targets: [
         .binaryTarget(
-            name: "KeyboardKitPro",
-            url: "https://github.com/KeyboardKit/KeyboardKit/releases/download/9.9.0/KeyboardKitPro.zip",
-            checksum: "31c62521f1075a767f1429ad5449b1d2db11a501d8b74db197bfd8a27d4d72d2"
+            name: "KeyboardKit",
+            url: "https://github.com/KeyboardKit/KeyboardKit-Binaries/releases/download/10.3.0/KeyboardKit.zip",
+            checksum: "c7531ccc8a2def0972e9c81e2dcf6fe0e134907584437c13d504fac62cdd4a02"
+        ),
+        .target(
+            name: "KeyboardKitDependencies",
+            dependencies: ["LicenseKit"],
+            path: "Dependencies",
         )
     ]
 )
