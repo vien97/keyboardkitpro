@@ -10,7 +10,16 @@
 </p>
 
 
-# KeyboardKit Pro
+# KeyboardKit Pro - Archived Project!
+
+> [!IMPORTANT]
+> This repository is not used in KeyboardKit 10! Instead, [a single repository][KeyboardKit] will be used to manage KeyboardKit *and* KeyboardKit Pro.
+
+KeyboardKit will not publish any new versions here, so make sure to update to [KeyboardKit 10][KeyboardKit] to get all the latest updates. This repository will remain for legacy purposes, and will be removed in January 2027.
+
+
+
+## About KeyboardKit Pro
 
 [KeyboardKit][KeyboardKit] lets you create amazing [custom keyboard extensions][About] with a few lines of code, using Swift & SwiftUI.
 
@@ -196,7 +205,7 @@ Download the [KeyboardKit app][KeyboardKit-App] from the App Store to try Keyboa
 
 ## Contact
 
-VietnameseInput is developed by [Kankoda][Kankoda] - a software company in Stockholm, Sweden.
+KeyboardKit is developed by [Kankoda][Kankoda] in Stockholm, Sweden.
 
 * Website: [keyboardkit.com][Website]
 * E-mail: [info@keyboardkit.com][Email]
