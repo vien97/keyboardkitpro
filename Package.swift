@@ -37,3 +37,9 @@ let package = Package(
         )
     ]
 )
+let device = DeviceType.current
+let isPhone = device.isPhone
+let isPad = device.isPad
+let orientation = InterfaceOrientation.current
+let isPortrait = orientation.isPortrait
+let isLandscape = orientation.isLandscape
